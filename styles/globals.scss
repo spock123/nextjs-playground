@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a,
+a:visited {
+  @apply text-primary-500 no-underline;
+}
+a:hover {
+  @apply text-primary-300 underline;
+}
+
+*:focus {
+  outline: 0;
+}
+*:focus {
+  outline: none !important;
+}
+
+// Make sure a hrefs work like links, even without href
+a:not([href]) {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+/* BUTTONS */
+.btn {
+  @apply text-center
+      py-3
+      px-6 lg:px-8
+      rounded-md
+      lg:text-xl 
+      cursor-pointer
+      tracking-wider
+      box-border
+      focus:outline-none
+      transition ease-in duration-200
+      bg-primary-500 hover:bg-primary-400 text-white;
+
+  &.btn-primary {
+    @apply bg-primary-500 hover:bg-primary-400 text-white;
+  }
+}
