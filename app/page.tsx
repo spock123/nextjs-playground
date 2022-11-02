@@ -12,6 +12,8 @@ export default function Page(props: any) {
         <main className={styles.main}>
           <Fade direction="down">
             <Link href="/hooks">Hooks</Link>
+            <Link href="/fetch">Fetch demo</Link>
+            <Link href="/form">Form demo</Link>
           </Fade>
 
           <p>
